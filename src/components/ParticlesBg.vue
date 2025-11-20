@@ -1,8 +1,19 @@
 <template>
-  <vue-particles id="tsp" :options="options"> </vue-particles>
+  <vue-particles
+    v-if="globals.enableParticles"
+    class="absolute top-0 left-0 size-0"
+    id="tsp"
+    :options="options"
+  >
+  </vue-particles>
 </template>
 <script setup lang="ts">
-const options = {
+import { useGlobalsStore } from "@/stores/useGlobalsStore";
+import { reactive } from "vue";
+
+const globals = useGlobalsStore();
+
+const options = reactive({
   background: {
     opacity: 0,
   },
@@ -15,7 +26,7 @@ const options = {
       value: 0.35,
     },
     number: {
-      value: 120,
+      value: 200,
     },
     color: {
       value: "#ffffff",
@@ -57,5 +68,5 @@ const options = {
       },
     },
   },
-};
+});
 </script>

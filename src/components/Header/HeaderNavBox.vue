@@ -1,14 +1,14 @@
 <template>
   <component
     :is="componentType"
-    class="inline-flex h-8 items-center justify-center px-4"
+    :class="['inline-flex h-8 items-center justify-center px-4']"
     :href="props.link"
     :to="props.route"
     :target="props.link && '_blank'"
   >
     <span
-      class="cursor-pointer truncate text-sm text-neutral-400 transition-colors
-        select-none hover:text-neutral-100"
+      class="truncate text-sm text-neutral-400 transition-colors select-none
+        hover:text-neutral-100"
       :title="props.tooltip"
     >
       <slot></slot>

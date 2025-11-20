@@ -44,5 +44,5 @@
 
 <script setup lang="ts">
 import TagBox from "@/components/TagBox.vue";
-import TechStackBox from "./TechStackBox.vue";
+import TechStackBox from "../components/TechStackBox.vue";
 </script>

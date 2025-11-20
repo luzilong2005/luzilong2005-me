@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import ProjectBox from "./ProjectBox.vue";
+import ProjectBox from "../components/ProjectBox.vue";
 
 const list = [
   {

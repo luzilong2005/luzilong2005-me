@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full flex-col space-y-4">
-    <LogoBox />
+    <AvatarBox />
     <h1 class="text-3xl font-bold">luzilong2005</h1>
     <p class="text-sm text-neutral-300" id="autotext"></p>
     <p>一个热爱编程的年轻人，喜欢探索新技术，喜欢挑战自我，喜欢分享知识。</p>
@@ -10,8 +10,9 @@
 
 <script setup lang="ts">
 import { onMounted } from "vue";
-import LogoBox from "./LogoBox.vue";
+
 import TypeIt from "typeit";
+import AvatarBox from "@/components/AvatarBox.vue";
 
 onMounted(() => {
   new TypeIt("#autotext", {

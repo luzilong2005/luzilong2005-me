@@ -5,8 +5,13 @@ import { router } from "./router";
 import Particles from "@tsparticles/vue3";
 import { loadSlim } from "@tsparticles/slim";
 import { printBanner, printMiniBanner } from "./banner";
+import { createPinia } from "pinia";
+import { createPersistedState } from "pinia-plugin-persistedstate";
+const pinia = createPinia();
+pinia.use(createPersistedState());
 createApp(App)
   .use(router)
+  .use(pinia)
   .use(Particles, {
     init: async (engine) => {
       await loadSlim(engine);

@@ -44,7 +44,7 @@
 
 <script setup lang="ts">
 import { GithubIcon, MailIcon } from "lucide-vue-next";
-import LinkBox from "./LinkBox.vue";
+import LinkBox from "../components/LinkBox.vue";
 import {
   ME_EMAIL,
   GITHUB_HOME_URL,

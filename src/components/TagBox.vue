@@ -12,10 +12,12 @@
     :title="props.title"
   >
     <img
-      v-if="!!props.src"
+      v-if="!showImage"
       class="size-4"
+      loading="lazy"
       :src="props.src"
       :alt="props.title"
+      @error="() => (showImage = false)"
     />
     <p v-if="!$slots.default">{{ props.title }}</p>
     <slot></slot>
@@ -24,10 +26,12 @@
 
 <script setup lang="ts">
 import { twMerge } from "tailwind-merge";
+import { shallowRef } from "vue";
 interface Props {
   class?: string;
   title?: string;
   src?: string;
 }
 const props = defineProps<Props>();
+const showImage = shallowRef(!props.src);
 </script>
