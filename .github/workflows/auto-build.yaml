@@ -31,8 +31,6 @@ jobs:
         run: bun install
 
       - name: Run build
-        env:
-          VITE_SITE_BASE_URL: /
         run: bun --bun run build
 
       - name: Upload artifact for Pages
