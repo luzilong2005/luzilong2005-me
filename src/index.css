@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-neutral-900 text-sm font-normal text-neutral-100;
+}
+
+:root {
+  --header-height: 5rem;
+  --phi: 1.618rem;
+}
+
+@layer {
+  ::selection {
+    @apply bg-neutral-700;
+  }
+}

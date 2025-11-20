@@ -1,0 +1,10 @@
+tabWidth: 2
+endOfLine: lf
+singleQuote: false
+quoteProps: consistent
+
+plugins:
+  - "prettier-plugin-packagejson"
+  - "prettier-plugin-tailwindcss"
+  - "prettier-plugin-classnames"
+  - "prettier-plugin-merge"
