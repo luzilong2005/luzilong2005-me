@@ -13,4 +13,5 @@ export default defineConfig({
   server: {
     port: 55011,
   },
+  base: "/luzilong2005.me/",
 });
