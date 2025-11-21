@@ -39,7 +39,7 @@ import MenuMergeButton from "./MenuMergeButton.vue";
 import { Transition } from "vue";
 import MenuItemBox from "./MenuItemBox.vue";
 import { PROJECT_GITHUB_URL, GITHUB_HOME_URL } from "@/constants";
-import ParticlesBgSwitcher from "../ParticlesBgSwitcher.vue";
+import ParticlesBgSwitcher from "../components/ParticlesBgSwitcher.vue";
 import { GithubIcon, HomeIcon } from "lucide-vue-next";
 import QrCodeButton from "../components/QrCodeButton.vue";
 </script>

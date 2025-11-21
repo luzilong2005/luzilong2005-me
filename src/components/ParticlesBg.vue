@@ -29,7 +29,7 @@ const options = reactive({
       value: 0.35,
     },
     number: {
-      value: 200,
+      value: 256,
       limit: {
         mode: "delete",
         value: 500,
@@ -49,30 +49,6 @@ const options = reactive({
       speed: 0.45,
       direction: "none",
       outModes: "out",
-    },
-    links: {
-      enable: true,
-      distance: 80,
-      color: "#ffffff",
-      opacity: 0.05,
-      width: 1,
-    },
-  },
-  interactivity: {
-    events: {
-      onHover: {
-        enable: true,
-        mode: "grab",
-      },
-    },
-    modes: {
-      grab: {
-        distance: 200,
-        links: {
-          opacity: 0.25,
-          color: "#ffffff",
-        },
-      },
     },
   },
 });

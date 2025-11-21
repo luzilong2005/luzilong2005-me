@@ -8,7 +8,6 @@
         <AvatarBox class="size-12" />
         <SignatureBox />
       </div>
-      <!-- 桌面端导航 -->
       <div class="hidden items-center space-x-2 sm:flex sm:space-x-4">
         <HeaderNavBox title="该项目的Github仓库地址" :link="PROJECT_GITHUB_URL">
           本项目
@@ -26,8 +25,6 @@
           <QrCodeButton />
         </HeaderNavBox>
       </div>
-
-      <!-- 移动端菜单 -->
       <div class="sm:hidden">
         <MobileMenu />
       </div>
@@ -42,6 +39,6 @@ import MobileMenu from "./mobiles/MobileMenu.vue";
 import { GITHUB_HOME_URL, PROJECT_GITHUB_URL } from "@/constants";
 import AvatarBox from "../AvatarBox.vue";
 import SignatureBox from "./SignatureBox.vue";
-import ParticlesBgSwitcher from "./ParticlesBgSwitcher.vue";
+import ParticlesBgSwitcher from "./components/ParticlesBgSwitcher.vue";
 import QrCodeButton from "./components/QrCodeButton.vue";
 </script>
