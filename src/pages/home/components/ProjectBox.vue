@@ -13,6 +13,10 @@
       {{ props.name }}
     </h3>
 
+    <p v-if="props.description" class="text-sm text-neutral-400">
+      {{ props.description }}
+    </p>
+
     <div class="flex items-center space-x-4 text-sm">
       <a
         class="flex items-center gap-1 text-neutral-300 hover:text-blue-400"
@@ -42,11 +46,12 @@ import DividerBox from "@/components/DividerBox.vue";
 import dayjs from "dayjs";
 import { GithubIcon, ChromeIcon } from "lucide-vue-next";
 
-interface Props {
+export interface ProjectBoxProps {
   name: string;
   date?: string;
   github: string;
   online: string;
+  description?: string;
 }
-const props = defineProps<Props>();
+const props = defineProps<ProjectBoxProps>();
 </script>

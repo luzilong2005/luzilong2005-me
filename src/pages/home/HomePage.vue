@@ -1,6 +1,6 @@
 <template>
   <div class="py-8">
-    <LogoSection/>
+    <LogoSection />
     <PersonalSection />
     <DividerBox />
     <ContactMeSection />
@@ -8,6 +8,8 @@
     <TechnologyStackSection />
     <DividerBox />
     <ProjectsSection />
+    <DividerBox />
+    <LinksSection />
   </div>
 </template>
 
@@ -18,4 +20,5 @@ import PersonalSection from "./sections/PersonalSection.vue";
 import ProjectsSection from "./sections/ProjectsSection.vue";
 import TechnologyStackSection from "./sections/TechnologyStackSection.vue";
 import LogoSection from "./sections/LogoSection.vue";
+import LinksSection from "./sections/LinksSection.vue";
 </script>

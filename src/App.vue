@@ -1,5 +1,6 @@
 <template>
   <AppHeader />
+  <ScrollBattery />
   <AppLayout>
     <RouterView />
   </AppLayout>
@@ -14,4 +15,5 @@ import AppLayout from "./components/Layout/AppLayout.vue";
 import AppFooter from "./components/Footer/AppFooter.vue";
 import ParticlesBg from "./components/ParticlesBg.vue";
 import TopButton from "./components/TopButton.vue";
+import ScrollBattery from "./components/ScrollBattery.vue";
 </script>

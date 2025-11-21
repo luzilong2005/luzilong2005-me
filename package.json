@@ -14,8 +14,11 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "clean": "rimraf dist",
+    "depcheck": "depcheck .",
     "dev": "vite",
     "format": "prettier --write .",
+    "gen-qrcode": "qrcode -o online_qr.png -w 256 \"me.luzilong2005.top\"",
     "preview": "vite preview"
   },
   "overrides": {
@@ -45,14 +48,18 @@
     "@types/node": "^24.10.0",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
+    "depcheck": "^1.4.7",
     "prettier": "^3.6.2",
     "prettier-plugin-classnames": "^0.8.5",
     "prettier-plugin-merge": "^0.8.0",
     "prettier-plugin-packagejson": "^2.5.19",
     "prettier-plugin-tailwindcss": "^0.7.1",
+    "qrcode": "^1.5.4",
+    "rimraf": "^6.1.2",
     "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
-    "vite": "npm:rolldown-vite@7.2.2"
+    "vite": "npm:rolldown-vite@7.2.2",
+    "vite-plugin-vue-devtools": "^8.0.5"
   },
   "engines": {
     "node": "^22"

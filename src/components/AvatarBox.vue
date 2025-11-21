@@ -2,7 +2,7 @@
   <div
     :class="
       twMerge(
-        `inline-flex size-24 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-neutral-800`,
+        `inline-flex size-24 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-neutral-500`,
         $attrs.class as string,
       )
     "
