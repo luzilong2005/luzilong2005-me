@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     server: {
+      host: "0.0.0.0",
       port: 55011,
     },
     base: env.VITE_SITE_BASE_URL ?? "/",

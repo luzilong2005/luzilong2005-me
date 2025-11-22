@@ -1,11 +1,12 @@
 <template>
   <div class="my-8 flex items-center">
     <pre
-      class="logo-animation mx-auto font-mono text-[0.25rem] text-neutral-300
-        select-none md:text-xs lg:text-sm"
+      class="logo-animation mx-auto font-(family-name:--logo-font)
+        text-[0.25rem] text-neutral-300 select-none md:text-xs lg:text-sm"
       :class="{
         'paused blur-lg': scrollY > 80,
       }"
+      role="banner"
       aria-hidden="true"
     >
       {{ banner }}

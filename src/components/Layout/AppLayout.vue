@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-(--header-height) mx-auto px-4 md:w-[210mm] md:px-0">
+  <main class="mx-auto mt-(--header-height) px-4 md:w-[210mm] md:px-0">
     <slot />
   </main>
 </template>

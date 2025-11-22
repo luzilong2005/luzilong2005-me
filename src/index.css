@@ -1,12 +1,13 @@
 @import "tailwindcss";
-
-body {
-  @apply bg-neutral-900 text-sm font-normal text-neutral-100;
-}
-
+@import "@fontsource-variable/cascadia-mono";
 :root {
   --header-height: 5rem;
   --phi: 1.618rem;
+  --logo-font: "Cascadia Mono Variable";
+}
+
+body {
+  @apply bg-neutral-900 text-sm font-normal text-neutral-100;
 }
 
 @layer {

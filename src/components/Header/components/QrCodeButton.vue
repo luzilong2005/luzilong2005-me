@@ -63,7 +63,9 @@ const handleOpenQrCodeModal = async () => {
       didOpen: () => {
         const downloadBtn = document.getElementById("download-qr");
         if (downloadBtn) {
-          downloadBtn.addEventListener("click", () => downloadQrCode(downloadUrl));
+          downloadBtn.addEventListener("click", () =>
+            downloadQrCode(downloadUrl),
+          );
         }
       },
     });

@@ -5,6 +5,7 @@
     "": {
       "name": "luzilong2005.me",
       "dependencies": {
+        "@fontsource-variable/cascadia-mono": "^5.2.2",
         "@headlessui/vue": "^1.7.23",
         "@tsparticles/slim": "^3.9.1",
         "@tsparticles/vue3": "^3.0.1",
@@ -25,8 +26,8 @@
       "devDependencies": {
         "@tailwindcss/vite": "^4.1.17",
         "@tsconfig/node22": "^22.0.5",
-        "@types/node": "^24.10.0",
-        "@vitejs/plugin-vue": "^6.0.1",
+        "@types/node": "^24.10.1",
+        "@vitejs/plugin-vue": "^6.0.2",
         "@vue/tsconfig": "^0.8.1",
         "depcheck": "^1.4.7",
         "prettier": "^3.6.2",
@@ -112,6 +113,8 @@
     "@emnapi/runtime": ["@emnapi/runtime@1.7.1", "https://registry.npmmirror.com/@emnapi/runtime/-/runtime-1.7.1.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA=="],
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.1.0", "https://registry.npmmirror.com/@emnapi/wasi-threads/-/wasi-threads-1.1.0.tgz", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ=="],
+
+    "@fontsource-variable/cascadia-mono": ["@fontsource-variable/cascadia-mono@5.2.2", "https://registry.npmmirror.com/@fontsource-variable/cascadia-mono/-/cascadia-mono-5.2.2.tgz", {}, "sha512-IjtyQuB9IiV8O/q2WWh+aZaRP8Q8rKl3d7J4aw1jUOt0BRjIQu1uSufUw0W5pZr6gpgGcol+Yjq6zWP8GM0auQ=="],
 
     "@headlessui/vue": ["@headlessui/vue@1.7.23", "https://registry.npmmirror.com/@headlessui/vue/-/vue-1.7.23.tgz", { "dependencies": { "@tanstack/vue-virtual": "^3.0.0-beta.60" }, "peerDependencies": { "vue": "^3.2.0" } }, "sha512-JzdCNqurrtuu0YW6QaDtR2PIYCKPUWq28csDyMvN4zmGccmE7lz40Is6hc3LA4HFeCI7sekZ/PQMTNmn9I/4Wg=="],
 
