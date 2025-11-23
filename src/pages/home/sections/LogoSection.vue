@@ -33,7 +33,7 @@ onUnmounted(() => cancelAnimationFrame(rafId));
 </script>
 <style scoped>
 .logo-animation {
-  animation: swing-blink 60s linear infinite;
+  animation: swing-blink 30s linear infinite;
 }
 .logo-animation.paused {
   animation-play-state: paused;
